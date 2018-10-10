@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { MainNavigationBarComponent } from './mainnavigationbar/MainNavigationBarComponent';
+
 
 @Component({
   selector: 'doc-marker',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class DocMarkerComponent {
   title = 'DocMarker';
+  @ViewChild(MainNavigationBarComponent) navBar: MainNavigationBarComponent;
+
+  public toggle(event: MouseEvent) {
+    this.navBar.toggle(event);
+  }
+
 }

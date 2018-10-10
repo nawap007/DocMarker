@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+
 import { DocMarkerComponent } from './DocMarkerComponent';
 import { MainNavigationBarComponent } from './mainnavigationbar/MainNavigationBarComponent';
 import { WorkspaceComponent } from './workspace/WorkspaceComponent';
@@ -12,10 +12,9 @@ import { WorkspaceComponent } from './workspace/WorkspaceComponent';
     WorkspaceComponent
   ],
   imports: [
-    BrowserModule,
-    RouterModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [DocMarkerComponent]
 })
-export class AppModule { }
+export class DocMarkerModule { }
